@@ -11,7 +11,7 @@
 
 
   class Admin extends User {
-
+    public $level;
   }
 
 
@@ -20,9 +20,10 @@ $user->username = "Dary";
 $user->email = "Dary@mail.com";
 
 $admin = new Admin();
-$admin->username = "Dary22";
-$admin->email = "Dar2y2@mail.com";
+$admin->username = "John";
+$admin->email = "John@mail.com";
+$admin->level = "Super Admin";
 
-echo $admin->email;
+echo $admin->email . " " . $admin->level;
 
 ?>
